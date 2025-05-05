@@ -1,0 +1,202 @@
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #4faac4;
+    padding: 10px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilos del menú de navegación */
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Menú horizontal en escritorio */
+    justify-content: center; /* Asegura que el menú esté centrado */
+}
+
+.menu-list li {
+    margin-right: 20px;
+}
+
+.menu-list li a {
+    color: rgb(243, 241, 241);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Mostrar icono de hamburguesa solo en móviles */
+.menu-icon {
+    font-size: 30px;
+    color: rgb(247, 244, 244);
+    cursor: pointer;
+    display: none; /* Ocultar por defecto */
+}
+
+/* Menú de contenido */
+nav a {
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #004370;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e74c3c;
+}
+
+/* Secciones */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centrado horizontal */
+    padding: 20px; /* Espacio alrededor para móviles */
+    padding-bottom: 50px;
+    margin: 0;
+    background: #f5f5f5; 
+}
+
+section {
+    background: rgba(172, 30, 30, 0);
+    border-radius: 20px;
+    box-shadow: 0px 50px 45px 15px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 90%;
+    padding: 30px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+
+h2 {
+    width: 90%;
+    max-width: 1000px;
+    margin: 12px auto;
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    margin: 12px 5%;
+    border-radius: 8px 8px 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+h2:hover {
+    background-color: #2980b9;
+}
+
+.contenido {
+    display: none; /* Oculto por defecto */
+    padding: 15px;
+}
+
+.contenido p {
+    line-height: 1.6;
+}
+
+.contenido img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.contenido pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 15px; /* Menos espacio en móviles */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Tamaño de fuente más pequeño en móviles */
+    }
+
+    .contenido {
+        padding: 10px; /* Menos espacio en móviles */
+    }
+    
+}
+
+/* Pie de página */
+footer {
+   
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: fixed; /* Fijo en la parte inferior */
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%); /* Centrado horizontal */
+    z-index: 1000; /* Asegura que el pie de página esté por encima del contenido */
+
+}
+
+footer a{
+
+    color: #3498db;
+    text-decoration: none;
+}
+
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query: Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .menu-list {
+        display: none; /* El menú está oculto por defecto en móviles */
+        flex-direction: column;
+        align-items: center; /* Centrado de los enlaces verticalmente */
+    }
+
+    .menu-icon {
+        display: block; /* Mostrar el icono de hamburguesa en pantallas pequeñas */
+    }
+
+    /* Mostrar el menú cuando tiene la clase "show" */
+    .menu-list.show {
+        display: block;
+       
+        padding: 10px;
+    }
+
+    .menu-list li {
+        margin: 10px 0; /* Separación entre los elementos del menú en móvil */
+    }
+}

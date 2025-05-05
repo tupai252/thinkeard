@@ -1,0 +1,1 @@
+Ya agregué lo del footer en todos pero falta poner las redes sociales ahí y el enlace del wordpress, si puedes haz lo de poner todo el proyecto en el wordpress, si se te complica me dices y lo hacemos juntos, te dejo adjuntado el correo de thinkheard en un email que te mandaré ahora

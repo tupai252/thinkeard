@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpeta Assets y Scripts Importantes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Carpeta Raíz y Scripts</h1>
+    </header>
+    <nav>
+        <!-- Icono de hamburguesa -->
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+
+        <!-- Menú desplegable -->
+        <ul class="menu-list" id="menu-list">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="pasos-previos.html">Pasos previos</a></li>
+            <li><a href="carpeta-assets.html">Carpeta Raíz y Scripts</a></li>
+        </ul>
+    </nav>
+
+<main>
+            <h2 onclick="toggleSection('como-comenzar')">Como comenzar</h2>
+            <div id="como-comenzar" class="contenido">
+           
+                <section>
+                    <h1>Tutorial: Abrir y ejecutar un proyecto en Unity</h1>
+
+                    <h1>Requisitos</h1>
+                    <ul>
+                    <li>Tener <strong>Unity Hub</strong> instalado (<a href="https://unity.com/" target="_blank">descargar aquí</a>).</li>
+                    <li>Tener instalada una <strong>versión de Unity</strong> compatible con el proyecto.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h1>Pasos</h1>
+
+                    <h3>1. Abrir Unity Hub</h3>
+                    <p>Ejecuta <strong>Unity Hub</strong> desde tu computadora.</p>
+
+                    <h3>2. Agregar el proyecto</h3>
+                    <ul>
+                    <li>En Unity Hub, ve a la pestaña <strong>"Projects"</strong>.</li>
+                    <li>Haz clic en el botón <strong>"Open"</strong> o <strong>"Add"</strong>.</li>
+                    <li>Navega hasta la carpeta donde está guardado el proyecto (donde ves carpetas como <code>Assets/</code> y <code>ProjectSettings/</code>).</li>
+                    <li>Selecciona la carpeta del proyecto y confirma.</li>
+                    </ul>
+
+                    <h3>3. Seleccionar la versión correcta de Unity</h3>
+                    <ul>
+                    <li>Si ves un aviso de <strong>"Incompatible version"</strong>, instala la versión recomendada o abre con una versión similar (puede haber avisos menores).</li>
+                    </ul>
+
+                    <h3>4. Abrir el proyecto</h3>
+                    <ul>
+                    <li>Haz clic en el proyecto para abrirlo.</li>
+                    <li>La primera vez puede tardar mientras se importan archivos.</li>
+                    </ul>
+
+                    <h3>5. Ejecutar el proyecto</h3>
+                    <ul>
+                    <li>Abre la escena principal (generalmente en <code>Assets/Scenes/</code>).</li>
+                    <li>Haz doble clic en la escena que quieras correr.</li>
+                    <li>Presiona el botón <strong>"Play"</strong> (ícono ▶️ en la parte superior).</li>
+                    <li>¡Listo! El proyecto debería ejecutarse en el editor.</li>
+                    </ul>
+                                <p>Este es el enlace de descarga del proyecto original</p>
+                                <a href="https://drive.google.com/file/d/1fGwziY65fBUwbyMxCAF7IdiKas3JBwMt/view?usp=sharing" download>
+                                    <button>Descargar Zip</button>
+                                </a>
+                </section>
+            </div>
+                           
+                           
+            
+
+            <h2 onclick="toggleSection('contenido-estructura')">Carpeta Raíz</h2>
+                        <div id="contenido-estructura" class="contenido">
+            
+                            <section>
+                                <p>Información de carpetas principales</p>
+                                    <ul>
+                                        <li><strong>Assets</strong>: Carpeta principal que contiene todos los recursos editables del juego
+                                        , como codigo, escenas, texturas, y sonidos.</li>
+
+                                        <li><strong>Packages</strong>: Contiene los paquetes utilizados por el proyecto
+                                        , gestionados por Unity Package Manager. Incluye dependencias como Unity UI, TextMeshPro, etc.</li>
+
+                                        <li><strong>ProjectSettings</strong>: Almacena las configuraciones globales del proyecto, como ajustes de renderizado, física, y entrada.</li>
+                                        
+                                        <li><strong>Assembly-CSharp (54 KB)</strong>: Archivo de proyecto de C# que organiza los scripts del juego. Los programadores pueden abrir este archivo en un editor de código para trabajar en los scripts.</li>
+                                    
+                                        <li><strong>juego.sln (1 KB)</strong>: Archivo de solución de Visual Studio. Es el punto de entrada para editar los scripts en un editor como Visual Studio o VS Code.</li>
+                                    
+                                        <pre><code>Ejemplo de código o pseudocódigo aquí.</code></pre>
+                                    </ul>
+                            </section>
+                        </div>
+                   
+
+
+
+                        <h2 onclick="toggleSection('contenido-de-carpeta-assets')">Scripts Importantes</h2>
+                        <div id="contenido-de-carpeta-assets" class="contenido">
+                           
+                            <section>
+                                <p>Esta carpeta tiene recursos editables por codigo del juego del juego. Se mostrará por subcarpetas.
+                        
+                                    <ul>
+                                        <li><strong>Codigo</strong>: Contiene los scripts en C# del juego. Los scripts encontrados incluyen:</li>
+                                        <ul>
+                                            <li><code>ControlColisiones.cs</code>: Maneja la lógica de colisiones entre objetos.</li>
+                                            <li><code>Controles.cs</code>: Gestiona las entradas del jugador (movimiento, acciones, etc.).</li>
+                                            <li><code>Creditos.cs</code>: Controla la pantalla de créditos del juego.</li>
+                                            <li><code>EliminarFIGURA.cs</code>: Maneja la eliminación de figuras u objetos.</li>
+                                            <li><code>jugar.cs</code>: Gestiona la funcionalidad para iniciar el juego .</li>
+                                            <li><code>MoverCamara.cs</code>: Controla el movimiento de la cámara .</li>
+                                            <li><code>movimiento_figura.cs</code>: Maneja el movimiento de una figura u objeto específico.</li>
+                                            <li><code>MOVIMIENTOS_FIGURAS.cs</code>: Gestiona el movimiento de múltiples figuras u objetos.</li>
+                                            <li><code>MusicManager.cs</code>: Controla la música del juego.</li>
+                                            <li><code>Opciones.cs</code>: Maneja la pantalla de opciones o configuración.</li>
+                                            <li><code>Seleccionarfigura.cs</code>: Permite seleccionar una figura u objeto .</li>
+                                            <li><code>SpawnManager.cs</code>: Gestiona la generación de objetos .</li>
+                                            <li><code>VolumeControl.cs</code>: Controla el volumen del juego (no funciona del todo, requiere arreglo). <strong>Nota:</strong> Consulte el <a href="https://example.com/bug-tracker/volumecontrol" target="_blank">rastreador de errores</a> para más detalles.</li>
+                                            <li><code>VOLVER.cs</code>: Maneja la funcionalidad de "volver" (regresar al menú principal).</li>
+                                        </ul>
+                                        <li><strong>Scenes</strong>: Contiene las escenas del juego, como <code>Menu.unity</code> y <code>Opciones.unity</code></li>
+                                        <li><strong>Textures</strong>: Almacena las texturas utilizadas en el juego, como imágenes de objetos y escenarios.</li>
+                                        <li><strong>Prefabs</strong>: Objetos prefabricados que se pueden reutilizar en las escenas.</li>
+                                    </ul>
+                                    <p><strong>Nota:</strong> Por cierto, si buscan archivos específicos tendran que buscar ya que este es resumido, exploren la carpeta <code>Assets</code> en el editor de Unity o en el explorador de archivos.</p>
+                                    <p><strong>Nota:</strong> Actualmente, los archivos de audio se encuentran directamente en la carpeta <code>Assets</code>. Se recomienda organizar estos archivos creando una subcarpeta específica para los audios.
+                                                            para los audios.
+                                    
+                                </p>
+                            </section>
+                        </div>
+</main>                    
+                
+        
+
+        <footer>
+            <p>&copy; 2023 Thinkeard. Todos los derechos reservados.</p>
+            <p>Desarrollado por Yori Martínez y Adrián Abad </p>
+            <a href="mailto:zmc0003@alu.medac.es">zmc0003@alu.medac.es</a>
+            <span> | </span>
+            <a href="mailto:aar0052@alu.medac.es">aar0052@alu.medac.es</a>
+        </footer>
+
+        <div style="height: 120px;"></div>
+</body>
+
+<script>
+    function toggleSection(id) {
+        var contenido = document.getElementById(id.toLowerCase());
+        if (contenido.style.display === "none" || contenido.style.display === "") {
+            contenido.style.display = "block";
+        } else {
+            contenido.style.display = "none";
+        }
+    }
+</script>
+</html>
